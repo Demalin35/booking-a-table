@@ -1,0 +1,117 @@
+/* src/components/ContactPage.css */
+
+/* General page styling */
+.contact-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: #f4f4f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Background styling for the page */
+  .contact-page::before {
+    content: '';
+    background-image: url('https://example.com/your-background-image.jpg'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  /* Heading styling */
+  .contact-page h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  
+  /* Paragraph description */
+  .contact-page p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Form styling */
+  .contact-form {
+    display: grid;
+    gap: 25px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form labels */
+  .form-label {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Form inputs */
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #ffce00;
+    box-shadow: 0 0 5px rgba(255, 206, 0, 0.8);
+    outline: none;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  /* Submit button styling */
+  .submit-btn {
+    padding: 15px 25px;
+    background-color: #ffce00;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+  }
+  
+  .submit-btn:active {
+    background-color: #ffba00;
+    transform: scale(0.98);
+  }
+  

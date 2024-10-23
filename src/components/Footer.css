@@ -1,0 +1,14 @@
+/* Footer CSS */
+footer {
+    position: relative; /* Ensure it follows normal document flow */
+    clear: both;        /* Clear any floated elements */
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f3; /* Adjust color as needed */
+  }
+  
+  /* Main content section */
+  .main-content {
+    padding-bottom: 100px; /* Ensure there is space between the content and footer */
+  }
+  
