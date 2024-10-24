@@ -1,0 +1,118 @@
+.cart-page {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-item span {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .cart-item span:first-child {
+    text-align: left;
+  }
+  
+  .cart-item span:last-child {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .cart-item button {
+    background-color: #ffce00;
+    border: none;
+    padding: 8px 12px;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item button:hover {
+    background-color: #ffd700;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .cart-summary h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .cart-summary button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .cart-summary .clear-cart-btn {
+    background-color: #e74c3c;
+    margin-right: 10px;
+  }
+  
+  .cart-summary .clear-cart-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1rem;
+    }
+  
+    .cart-summary {
+      text-align: center;
+    }
+  
+    .cart-summary h3 {
+      font-size: 1.5rem;
+    }
+  
+    .cart-summary button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

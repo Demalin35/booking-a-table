@@ -1,8 +1,6 @@
-// BookingFormModal.js
-
 import React from 'react';
 import BookingForm from './BookingForm';
-import './BookingFormModal.css'; // Create this CSS file for the modal
+import './BookingFormModal.css';
 
 function BookingFormModal({ closeModal }) {
   return (

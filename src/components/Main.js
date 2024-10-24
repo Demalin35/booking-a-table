@@ -1,6 +1,5 @@
-// src/components/Main.js
 import React, { useReducer, useState } from 'react';
-import Modal from './Modal'; // Import the Modal component
+import Modal from './Modal';
 import BookingForm from './BookingForm';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ function initializeTimes() {
 // Reducer to update available times
 function updateTimes(state, action) {
   if (action.date) {
-    // In a real-world scenario, you might adjust times based on the selected date.
+
     return initializeTimes();
   }
   return state;
@@ -26,11 +25,10 @@ function Main() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  // Handle form submission and navigate to confirmation
   const submitForm = (formData) => {
     console.log('Reservation Details:', formData);
-    closeModal(); // Close the modal after form submission
-    navigate('/confirmation'); // Redirect to confirmation page
+    closeModal();
+    navigate('/confirmation');
   };
 
   return (

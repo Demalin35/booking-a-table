@@ -1,0 +1,113 @@
+.greek-salad-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .greek-salad-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .greek-salad-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  
+  .greek-salad-title {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .greek-salad-description {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .greek-salad-price {
+    font-size: 2rem;
+    color: #ffce00;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .greek-salad-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .greek-salad-quantity input {
+    width: 70px;
+    height: 45px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .greek-salad-button {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    background-color: #ffce00;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .greek-salad-button:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .greek-salad-page {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .greek-salad-image {
+      max-width: 100%;
+    }
+  
+    .greek-salad-content {
+      padding-left: 0;
+    }
+  
+    .greek-salad-title {
+      font-size: 2.8rem;
+    }
+  
+    .greek-salad-description {
+      font-size: 1.3rem;
+    }
+  
+    .greek-salad-price {
+      font-size: 1.8rem;
+    }
+  
+    .greek-salad-quantity input {
+      width: 60px;
+      height: 40px;
+    }
+  
+    .greek-salad-button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
+  

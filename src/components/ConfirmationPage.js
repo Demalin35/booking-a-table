@@ -1,4 +1,3 @@
-// src/components/ConfirmationPage.js
 import React from 'react';
 import './ConfirmationPage.css'; // Import the CSS file for styling
 import { Link } from 'react-router-dom'; // Import Link for navigation

@@ -1,7 +1,6 @@
-// src/components/BookingPage.js
 import React from 'react';
 import BookingForm from './BookingForm';
-import './BookingPage.css'; // The new CSS file we just created
+import './BookingPage.css';
 
 function BookingPage() {
   return (

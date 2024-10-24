@@ -1,4 +1,3 @@
-// src/components/ContactPage.js
 import React, { useState } from 'react';
 import './ContactPage.css'; // Import CSS for styling
 
@@ -20,7 +19,6 @@ function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Message Sent:', formData);
-    // Here, you'd typically send the form data to the backend or API.
   };
 
   return (

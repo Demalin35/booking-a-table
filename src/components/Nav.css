@@ -1,4 +1,3 @@
-/* Updated Header Styling */
 .header {
   width: 100%;
   min-height: 500px;
@@ -15,29 +14,25 @@
 .header-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   width: 100%;
   padding: -50%;
 }
 
 .header-text {
-  max-width: 30%;  
+  max-width: 30%;
   align-self: center;
   margin-right: 20px;
 }
 
 /* Header Text Styling */
 .header-text h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #ffce00;
 }
 
-.header-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  color: #383838;
-}
 
 .header-text p {
   font-size: 1.3rem;
@@ -46,10 +41,10 @@
 
 /* Header Image Styling */
 .header-image-container {
-  max-width: 20%; 
+  max-width: 20%;
   display: flex;
   justify-content: flex-end;
-  margin-right: 200px;  
+  margin-right: 200px;
   margin-top: 50px;
 }
 
@@ -308,39 +303,39 @@
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
   .header-text {
-    max-width: 100%; /* Allow full width for the text container */
-    text-align: center; /* Center the text */
-    margin-right: 0; /* Remove right margin */
-    margin-top: 20px; /* Add some spacing at the top */
+    max-width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 20px;
   }
 
   .header-text h1 {
-    font-size: 2.5rem; /* Adjust font size for mobile */
+    font-size: 2.5rem;
   }
 
   .header-text h2 {
-    font-size: 1.5rem; /* Adjust font size for mobile */
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 
   .header-text p {
-    font-size: 1rem; /* Adjust paragraph size */
+    font-size: 1rem;
     margin-bottom: 15px;
   }
 
   .header-content {
-    flex-direction: column; /* Stack the image and text vertically */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   .header-image-container {
-    display: none; /* Hide the image container on mobile */
+    display: none;
   }
 
   .reserve-btn {
-    margin-top: 15px; /* Add space below the text */
-    padding: 10px 30px; /* Adjust button padding */
-    font-size: 1rem; /* Adjust button font size */
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: 1rem;
   }
   .menu-grid {
     flex-direction: column;

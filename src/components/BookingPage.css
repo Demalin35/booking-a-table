@@ -1,90 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* BookingPage Styling */
 .booking-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-    background: #f7f7f7;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  padding-top: 120px;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.booking-form-container {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Input Styling */
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin: 0;
+}
+
+/* Submit Button Styling */
+.booking-form .submit-btn {
+  padding: 10px 12px;
+  background-color: #ffce00;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+
+/* Submit Button Hover */
+.booking-form .submit-btn:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Page Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-form-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .booking-page {
+    padding-top: 100px;
+  }
+
   .booking-form-container {
-    background-color: white;
-    padding: 30px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 400px;
+    width: 100%;
+    padding: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
   }
-  
-  .booking-form {
-    display: grid;
-    gap: 20px;
-  }
-  
-  /* Input Styling */
+
   .booking-form input,
   .booking-form select {
     padding: 12px;
-    font-size: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    font-size: 1.1rem;
   }
-  
-  /* Interactive Focus Effects */
-  .booking-form input:focus,
-  .booking-form select:focus {
-    border-color: #4e5954;
-    outline: none;
-    box-shadow: 0 0 5px rgba(78, 89, 84, 0.5);
-  }
-  
-  /* Submit Button Styling */
+
   .booking-form .submit-btn {
-    padding: 12px 20px;
-    background-color: #ffce00;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 15px;
+    font-size: 1.3rem;
   }
-  
-  .booking-form .submit-btn:hover {
-    background-color: #ffd700;
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+
+  .booking-page h1 {
+    font-size: 2.4rem;
   }
-  
-  /* Adding Animated Hover Effects */
-  .booking-form input:hover,
-  .booking-form select:hover {
-    border-color: #ffce00;
+
+  .booking-page p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
   }
-  
-  /* Animation on Page Load */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .booking-form-container {
-    animation: fadeIn 0.8s ease-in-out;
-  }
-  
-  /* Responsive for smaller screens */
-  @media (max-width: 768px) {
-    .booking-form-container {
-      width: 100%;
-      padding: 20px;
-    }
-  }
-  
+}

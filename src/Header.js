@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from './components/Nav';  // Import the Nav component
-import logo from '../assets/logo.png';  // Correct path to the logo image
+import Nav from './components/Nav';
+import logo from '../assets/logo.png';
 
 function Header() {
   return (

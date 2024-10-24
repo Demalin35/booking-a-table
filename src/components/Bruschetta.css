@@ -1,0 +1,113 @@
+.bruschetta-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .bruschetta-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bruschetta-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  
+  .bruschetta-title {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .bruschetta-description {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .bruschetta-price {
+    font-size: 2rem;
+    color: #ffce00;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .bruschetta-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .bruschetta-quantity input {
+    width: 70px;
+    height: 45px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .bruschetta-button {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    background-color: #ffce00;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bruschetta-button:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .bruschetta-page {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .bruschetta-image {
+      max-width: 100%;
+    }
+  
+    .bruschetta-content {
+      padding-left: 0;
+    }
+  
+    .bruschetta-title {
+      font-size: 2.8rem;
+    }
+  
+    .bruschetta-description {
+      font-size: 1.3rem;
+    }
+  
+    .bruschetta-price {
+      font-size: 1.8rem;
+    }
+  
+    .bruschetta-quantity input {
+      width: 60px;
+      height: 40px;
+    }
+  
+    .bruschetta-button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
+  
